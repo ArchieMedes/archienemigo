@@ -179,7 +179,7 @@ ul {
 .contenedor {
   width: 93%;
   max-width: 120rem;
-  margin: 0 0 0 1.4rem;
+  
 }
 
 @media (min-width: 768px) {
