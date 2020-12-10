@@ -111,6 +111,7 @@ body {
 
 img {
   max-width: 100%; /* esto hace responsivas las imagenes */
+  max-height: 100%;
 }
 
 h1{
@@ -207,11 +208,11 @@ ul {
   
 }
 
-.boton a{
+a .boton{
   transition: all 1s ease-in-out;
 }
 
-.boton:hover a {
+a .boton:hover {
   color: black;
 }
 
@@ -415,6 +416,11 @@ span.ocultar {
 
 .videos video {
   max-width: 100%;
+  
+}
+
+.videos video:last-child {
+  margin-bottom: 7rem;
 }
 
 @media (min-width: 992px) {
@@ -423,11 +429,44 @@ span.ocultar {
     grid-template-columns: 33.3% 33.3% 33.3%;
     align-content: center;
     padding-top: 0.5em;
-    margin-bottom: 13.5rem;
+    margin-bottom: 7rem;
   }
 }
 
+/* ------------- SERVICIOS */
+
+.servicios {
+  margin-bottom: 7rem;
+}
+
+.servicio {
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.servicio img {
+  width: 100%;
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.servicio img:hover {
+  -webkit-transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .servicio p {
+    padding: 0 2rem;
+  }
+  
+}
+
+
+
+
 /* ------------- BLOG */
+.blog {
+  padding-bottom: .1rem;
+}
 
 .contenido-blog {
   color:#eaeaea; 
@@ -451,7 +490,7 @@ span.ocultar {
 .img-entrada {
   display: inline-block;
   width: 160px;
-  margin-top: 1.5rem;
+  
 }
 
 .pie-entrada {
@@ -470,7 +509,13 @@ span.ocultar {
 }
 
 .entradas-blog {
-  margin-top: 0;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .entradas-blog {
+    margin-top: 0;
+  }
 }
 
 .entradas-blog li {
@@ -488,65 +533,64 @@ span.ocultar {
 }
 
 .titulo-entrada {
+  display: inline-block;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   align-items: center;
+  border-top: 1px solid white;
 }
 
 .boton-blog {
   margin-top: 1.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1.5rem;
   padding: 1rem 0;
   text-align: center;
-
 }
 
-.boton-blog a {
+@media (min-width: 768px) {
+  .boton-blog {
+    margin-bottom: 1rem;
+  }
+}
+
+a .boton-blog {
   color: white;
   font-size: 1rem;
 }
 
-/* ------------ MIS INFLUENCIAS */
-.personajes { /* esto sirve para que el zoom no sobrepase el contenedor */
-  overflow: hidden;
-  position: relative;
+/* ---------------- FOOTER */
+
+.pie-pagina {
+  background-color: #1b1b1b;
 }
 
-.personajes img {
-  width: 100%;
-  -webkit-transition: all .5s ease-in-out;
-  margin-bottom: 1rem;
+.contenedor-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem 0;
 }
 
-.personajes img:hover {
-  -webkit-transform: scale(1.1);
+.seccion-footer {
+  text-align: center;
 }
 
-
-.personajes h3 {
-  margin: 1rem auto;
+.fa-skull-crossbones {
+  padding-top: 1rem;
+  align-items: center;
 }
 
-.personajes {
-  margin-bottom: 3rem;
+.seccion-footer .redes-iconos{
+  margin-right: 1rem;
 }
 
-.personajes:last-child {
-  margin-bottom: unset;
+.seccion-footer .redes-iconos a{
+  margin-top: 1rem;
 }
-
-
-
-@media (min-width: 768px) {
-  .personajes p {
-    padding: 0 2rem;
-  }
   
-}
 
-.personajes:last-child p {
-  margin-bottom: 7rem;
-}
+/* ------------------------------------------ PÁGINAS INTERNAS */
+
+/* ----------------------------- CONOCEME.HTML */
 
 /* ----------------- BIO */
 .foto-mia {
@@ -592,50 +636,63 @@ span.ocultar {
 
 }
 
+/* ------------ MIS INFLUENCIAS */
+.personajes { /* esto sirve para que el zoom no sobrepase el contenedor */
+  overflow: hidden;
+  position: relative;
+}
+
+.personajes img {
+  width: 100%;
+  -webkit-transition: all .5s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.personajes img:hover {
+  -webkit-transform: scale(1.1);
+}
+
+
+.personajes h3 {
+  margin: 1rem auto;
+}
+
+.personajes {
+  margin-bottom: 3rem;
+}
+
+.personajes:last-child {
+  margin-bottom: unset;
+}
+
+
+
+@media (min-width: 768px) {
+  .personajes p {
+    padding: 0 2rem;
+  }
+  
+}
+
+.personajes:last-child p {
+  margin-bottom: 7rem;
+}
+
 /* ------------------ INSAGRAM WIDGET */
+
+.instagram-section {
+  margin: 2rem 2rem 0  2rem;
+  padding-bottom: 5rem; 
+}
+
 .snapwidget {
+  width: 100%;
   margin-top: 2rem;
 }
 
 .sigueme-ig {
   color: white;
 }
-
-.instagram-section {
-  margin: 5rem 5rem 0  5rem;
-  padding-bottom: 5rem; 
-}
-
-/* ---------------- FOOTER */
-
-.pie-pagina {
-  background-color: #1b1b1b;
-}
-
-.contenedor-footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 2rem 0;
-}
-
-.seccion-footer {
-  text-align: center;
-}
-
-.fa-skull-crossbones {
-  padding-top: 1rem;
-  align-items: center;
-}
-
-.seccion-footer .redes-iconos{
-  margin-right: 1rem;
-}
-
-.seccion-footer .redes-iconos a{
-  margin-top: 1rem;
-}
-  
-
 
 
 
