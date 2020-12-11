@@ -203,18 +203,12 @@ ul {
 
 @media (min-width: 768px) {
   .contenedor {
-    width: 93%;
+    width: 75%;
     max-width: 120rem;
     margin: 0 auto;
   }
 }
 
-@media (min-width: 768px) {
-  .contenedor {
-    width: 75%;
-
-  }
-}
 
 .boton {
   background-color: black;
@@ -263,6 +257,17 @@ a .boton:hover {
   .texto-margen {
     margin: 0 2rem;
   }
+}
+
+/* ---------------- CLASE FIXED */
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  z-index: 2;
+  
 }
 
 
@@ -317,13 +322,30 @@ a .boton:hover {
   }
 }
 
+.menu-hamburguesa {
+  text-align: center;
+}
+
+.menu-hamburguesa i:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .menu-hamburguesa {
+    display: none;
+  }
+}
+
 .menu-movil {
   display: none;
-  background: grey;
+  margin-top: 1rem;
+  background: black;
+  width: 100%;
 }
 
 .menu-movil a {
   display: block;
+  margin-bottom: 1rem;
   text-align: center;
   color: white;
 }
