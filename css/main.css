@@ -119,7 +119,7 @@ h1{
 }
 
 h2{
-  font-size: 8vw;
+  font-size: 5.3vw;
   font-family: 'Major Mono Display', monospace;
 }
 
@@ -487,7 +487,7 @@ span.ocultar {
 /* ------------- SERVICIOS */
 
 .servicios {
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 }
 
 .servicio {
@@ -660,6 +660,12 @@ a .boton-blog {
 
 }
 
+.texto-2 {
+  margin-bottom: 4.3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #1b1b1b;
+}
+
 @media (min-width: 768px) {
   .contenido-bio {
     display: grid;
@@ -692,47 +698,6 @@ a .boton-blog {
   }
 }
 
-/* ------------ MIS INFLUENCIAS */
-.personajes { /* esto sirve para que el zoom no sobrepase el contenedor */
-  overflow: hidden;
-  position: relative;
-}
-
-.personajes img {
-  width: 100%;
-  -webkit-transition: all .5s ease-in-out;
-  margin-bottom: 1rem;
-}
-
-.personajes img:hover {
-  -webkit-transform: scale(1.1);
-}
-
-
-.personajes h3 {
-  margin: 1rem auto;
-}
-
-.personajes {
-  margin-bottom: 3rem;
-}
-
-.personajes:last-child {
-  margin-bottom: unset;
-}
-
-
-
-@media (min-width: 768px) {
-  .personajes p {
-    padding: 0 2rem;
-  }
-  
-}
-
-.personajes:last-child p {
-  margin-bottom: 7rem;
-}
 
 /* ------------------ INSAGRAM WIDGET */
 
@@ -876,6 +841,52 @@ a .boton-blog {
   }
 
 }
+
+/* ------------------------------- BLOG */
+
+/* ----------------- MIS INFLUENCIAS.HTML */
+/* ------------ MIS INFLUENCIAS */
+.personajes { /* esto sirve para que el zoom no sobrepase el contenedor */
+  overflow: hidden;
+  position: relative;
+}
+
+.personajes img {
+  width: 100%;
+  -webkit-transition: all .5s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.personajes img:hover {
+  -webkit-transform: scale(1.1);
+}
+
+
+.personajes h3 {
+  margin: 1rem auto;
+}
+
+.personajes {
+  margin-bottom: 3rem;
+}
+
+.personajes:last-child {
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #1b1b1b;
+}
+
+.personajes p:last-child {
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .personajes p {
+    padding: 0 2rem;
+  }
+  
+}
+
+
 
 
 
