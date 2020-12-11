@@ -142,6 +142,7 @@ h3{
 
 
 h4{
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.6rem;
 }
 
@@ -169,6 +170,23 @@ a.enlace-minuscula {
 
 a.enlace-minuscula:hover {
   color: white;
+}
+
+a.enlace-generico {
+  text-transform: unset;
+  color: #1b1b1b
+}
+
+a.enlace-generico:hover {
+  color: white;
+}
+
+a.enlace-pagina-externa {
+  transition: color .5s ease-in-out;
+}
+
+a.enlace-pagina-externa:hover {
+  color: #1b1b1b;
 }
 
 ul {
@@ -239,6 +257,14 @@ a .boton:hover {
 .centrar-texto {
   text-align: center;
 }
+
+
+@media (min-width: 768px) {
+  .texto-margen {
+    margin: 0 2rem;
+  }
+}
+
 
 
 
@@ -416,7 +442,6 @@ span.ocultar {
 
 .videos video {
   max-width: 100%;
-  
 }
 
 .videos video:last-child {
@@ -639,8 +664,6 @@ a .boton-blog {
     grid-column-start: 2;
     grid-column-end: 3;
   }
-  
-
 }
 
 /* ------------ MIS INFLUENCIAS */
@@ -704,6 +727,96 @@ a .boton-blog {
 .barra-seccion {
   background-color: white;
 }
+
+
+/* ---------------------------------- PODCAST.HTML */
+
+/*----- MAIN */
+.imagen-podcast img {
+  width: 100%;
+}
+
+.contenido-podcast iframe {
+  margin: 2rem 0;
+  width: 80%;
+}
+
+.contenido-podcast h4 {
+  margin: 0 0 0 0; 
+}
+
+.contenido-podcast i {
+  margin: 2rem 0;
+}
+
+/* ---------------------------------- VIDEOS.HTML */
+
+/*----- MAIN */
+
+.video-principal iframe {
+  width: 100%;
+  height: 638px;
+  margin-bottom: 2rem;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.videos-grid iframe {
+  width: 100%;
+  height: 240px;
+}
+
+
+.contenido-videos i {
+  font-size: 8rem;
+  margin: 0 0 2rem 0;
+}
+
+/* ----------------------------- MUSICA.HTML */
+/* ----- MAIN */
+
+/* ESTAS LINEAS SON TEMPORALES!!!! */
+.proximamente {
+  padding-bottom: 25vw;
+  margin-bottom: 0;
+}
+
+/* ----------------------------- PAGINASWEB.HTML */
+/* ------ MAIN */
+
+
+
+
+@media (min-width: 768px) {
+  .nombre-pagina{
+    margin: 0;
+  }
+  .contenedor-grid-3-columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 15rem;
+  }
+  
+  .contenedor-grid-3-columnas h2 a {
+    color: white;
+    padding: 0 1rem;
+    font-size: 2rem;
+  }
+
+  .contenedor-grid-3-columnas img {
+    padding: 1rem;
+    -webkit-transition: all .5s ease-in-out;
+  }
+  .contenedor-grid-3-columnas img:hover {
+    -webkit-transform: scale(1.1);
+  }
+
+  
+}
+
 
 
 
