@@ -350,6 +350,10 @@ a .boton:hover {
   color: white;
 }
 
+.menu-movil a:last-of-type {
+  margin-bottom: 0;
+}
+
 /* --------------------- CUERPO -------------- */
 .contenedor-principal {
   background-color: #323232;
