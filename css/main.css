@@ -318,7 +318,13 @@ a .boton:hover {
   .barra-navegacion a {
     display: unset;
     color: white;
-    font-size: .9vw;
+    font-size: .8vw;
+  }
+}
+
+@media (min-width: 1500px) {
+  .barra-navegacion a {
+    font-size: 1rem;
   }
 }
 
