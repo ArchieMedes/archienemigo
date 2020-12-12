@@ -690,8 +690,10 @@ a .boton-blog {
     margin-bottom: 2rem;
   }
   .texto-1 {
+    text-align: unset;
     margin-left: 1rem!important;
   }
+
   .texto-2 {
     grid-row-start: 2;
     grid-row-end: 3;
