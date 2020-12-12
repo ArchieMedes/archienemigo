@@ -892,7 +892,15 @@ a .boton-blog {
   
 }
 
+.logo-apple i {
+  font-size: 15vw;
+}
 
+@media (min-width: 992px) {
+  .logo-apple i {
+    font-size: 8rem;
+  }
+}
 
 
 
