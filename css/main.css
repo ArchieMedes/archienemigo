@@ -631,6 +631,10 @@ a .boton-blog {
   text-align: center;
 }
 
+.seccion-footer p {
+  font-size: 2vw;
+}
+
 .fa-skull-crossbones {
   padding-top: 1rem;
   align-items: center;
@@ -642,6 +646,10 @@ a .boton-blog {
 
 .seccion-footer .redes-iconos a{
   margin-top: 1rem;
+}
+
+.redes-iconos a i {
+  font-size: 3.5vw;
 }
   
 
