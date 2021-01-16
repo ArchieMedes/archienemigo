@@ -648,10 +648,18 @@ a .boton-blog {
   margin-top: 1rem;
 }
 
-.redes-iconos a i {
+.seccion-footer .redes-iconos a i {
   font-size: 3.5vw;
 }
-  
+
+@media (min-width: 768px) {
+  .seccion-footer p {
+    font-size: 1rem;
+  }
+  .seccion-footer .redes-iconos a i {
+    font-size: 2rem;
+  }
+}
 
 /* ------------------------------------------ PÁGINAS INTERNAS */
 
@@ -712,6 +720,10 @@ a .boton-blog {
     grid-column-start: 2;
     grid-column-end: 3;
   }
+}
+
+.icono-ig i {
+  font-size: 5rem;
 }
 
 
